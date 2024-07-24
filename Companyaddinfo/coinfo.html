@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" href="Css/coinfo.css">        
+<link rel="stylesheet" href="Css/all.min.css">
+<link rel="icon" href="company-info.png">
+<title>Company Info</title>
+<body>
+    <div class="container">
+        <h1>Company Information</h1>
+        <img src="download.png" alt="">
+        <form>
+            <div class="form-group" id="logoContainer">
+                <label for="logoInput">Upload Logo:</label>
+                <input type="file" id="logoInput" name="logoInput">
+            </div>
+            <div class="form-group" id="bio">
+                <h2>Bio:</h2>
+                <label for="bioText"></label><textarea id="bioText" name="bioText" rows="4" placeholder="Enter company bio..."></textarea>
+            </div>
+            <div class="form-group" id="address">
+                <h2>Address:</h2>
+                <label for="addressText"></label><input type="text" id="addressText" name="addressText" placeholder="Enter company address...">
+            </div>
+            <div class="form-group" id="location">
+                <h2>Location (Optional):</h2>
+                <label for="locationText"></label><input type="text" id="locationText" name="locationText" placeholder="Enter company location...">
+            </div>
+            <div class="form-group" id="username">
+                <h2>Username:</h2>
+                <label for="usernameText"></label><input type="text" id="usernameText" name="usernameText" placeholder="Enter company username...">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/coinfo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+    <script src="js/bootstrap.bundle.min.js"></script>      
+</body>

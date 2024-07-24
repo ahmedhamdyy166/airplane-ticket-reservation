@@ -1,0 +1,91 @@
+body {
+    background-image: url('two-silhouette-of-aircraft-plane-background-dayppbcqh0xw6zvg.webp');
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/*     
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.info-row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#name {
+    font-size: 18px;
+}
+
+#bio {
+    font-size: 16px;
+}
+
+#address {
+    font-size: 14px;
+}
+
+#flights {
+    list-style: none;
+    padding: 0;
+}
+
+#flights li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.contbutton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonof {
+    margin-top: 20px; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: burlywood;
+}

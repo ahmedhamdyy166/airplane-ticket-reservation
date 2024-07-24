@@ -1,0 +1,107 @@
+<html>
+<head>
+<link rel="stylesheet" href="Css/passhome.css">        
+<link rel="stylesheet" href="Css/all.min.css">
+<link rel="icon" href="">
+<title>Passenger Home</title>
+<body>
+    
+    
+        <section class="profile-section">
+            <h1>Passenger Home</h1>
+            <div class="profile-details">
+                <!-- <?php echo $passengerData['name']?> -->
+
+                <p>Name <i class="fa-solid fa-user"></i> :</i> </p>
+                <!-- <?php echo $passengerData['email']?> -->
+
+                <p>Email <i class="fa-solid fa-envelope"> :</i>  </p>
+                <!-- "<?php echo $passengerData['photo']?>" -->
+
+                <p>Image <img src="" <i class="fa-solid fa-image"> :</i> </p>
+                <!-- <?php echo $passengerData['tel']?> -->
+
+                <p>Tel <i class="fa-solid fa-phone"> :</i></p>
+
+                <!-- <?php echo $passengerData['account']?> -->
+                <p>Account <i class="fa-solid fa-handshake-angle"> :</i> </p>
+            
+            <div class="current-flights">
+                <h2>Current Flights</h2>
+                <ul class="flight-list">
+                    <li>
+                       <?php foreach($flightData as $flightdata){
+                                 foreach($flightdata as $key => $value){
+                                     echo $key." ".$value.'<br>';
+                                 }
+                                 echo "<br>";
+                             }?>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <div class="searching">
+            <h2>Search a Flight</h2>
+        <form id="searchForm" action="PassengerHome.php" method="post">
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="Enter departure city">
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="Enter destination city">
+            <button type="submit" name ="searchBtn">Submit</button>
+        </form>
+        </div>
+        <div class="searchat">
+        <div class="searchof">
+        <h2>Searched results</h2>
+        </div>
+        <div class="searchcontent">
+        <form action="bookFlight.php" method="post">
+            <input type="hidden" name="index" value="">
+            <button type="submit">Pay</button>
+        </form>
+        </div>
+        </div>
+        <!-- <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['searchBtn'])) {
+            $from = $_POST['from'];
+            $to = $_POST['to'];
+            $searchedFlight = $user->searchFlight($from, $to);
+    
+            // Check if there are search results
+            if (!empty($searchedFlight)) {
+                echo '<h2>Search Results:</h2>';
+                echo '<ul>';
+                foreach ($searchedFlight as $flight) {
+                    echo '<li>';
+                    foreach ($flight as $key => $value) {
+                        echo $key . ": " . $value . '<br>';
+                    }
+                    echo '<form action="bookFlight.php" method="post">';
+                    echo '<input type="hidden" name="index" value="' . $flight['Flight ID: '] . '">';
+                    echo '<button type="submit">Pay</button>';
+                    echo '</form>';
+                    echo '</li>';
+                }
+                echo '</ul>';
+            } else {
+                echo '<p>No results found for the given search criteria.</p>';
+            }
+        }
+        ?> -->
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="js/passhome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+    <script src="js/bootstrap.bundle.min.js"></script>      
+</body>

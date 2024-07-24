@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="stylesheet" href="Css/add.css">        
+<link rel="stylesheet" href="Css/all.min.css">
+<link rel="icon" href="download.png">
+<title>Add flight</title>
+<body>
+    
+  <div class="container">
+    <div class="contentof">
+    <h2>Add Flight <i class="fa-solid fa-person-circle-plus"></i></h2>
+    </div>
+    <form id="addFlightForm">
+
+      <label for="name">Name <i class="fa-solid fa-user"></i> :</i></label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="itinerary">Itinerary <i class="fa-solid fa-route"> :</i></label>
+      <div id="itineraryFields">
+        <input type="text" name="itinerary[]" required>
+      </div>
+      
+      <button type="button" onclick="addItineraryField()">Add Itinerary</button>
+      
+      <label for="fees">Fees  <i class="fa-brands fa-cc-visa"></i> / <i class="fa-solid fa-sack-dollar"> :</i></label>
+      <input type="text" id="fees" name="fees" required>
+
+      <label for="passengers">Number of Passengers <i class="fa-solid fa-people-group"> :</i></label>
+      <input type="number" id="passengers" name="passengers" required>
+
+      <label for="start_time">Start Time <i class="fa-solid fa-clock"> :</i></label>
+      <input type="datetime-local" id="start_time" name="start_time" required>
+
+      <label for="end_time">End Time <i class="fa-solid fa-clock"> :</i></label>
+      <input type="datetime-local" id="end_time" name="end_time" required>
+      <div class="buttoning">
+      <button type="submit" name="addFlightBtn">Add Flight</button>
+      <button type="submit" id="return" name="return">Return Home</button>
+      </div>
+      
+    </form>
+  </div>
+  </div>
+  
+
+
+
+    <script src="js/add.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+    <script src="js/bootstrap.bundle.min.js"></script>      
+</body>

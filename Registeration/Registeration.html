@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" href="Css/Registeration.css">        
+<link rel="stylesheet" href="Css/all.min.css">
+<link rel="icon" href="png-transparent-registered-trademark-symbol-copyright-symbol-registered-miscellaneous-text-trademark-thumbnail.png">
+<title>Register</title>
+<body>
+    
+    <section class="container">
+        <form id="registerForm" action="register.php" method="post">
+            <h2>Register</h2>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+
+            <label for="telephone">Telephone:</label>
+            <input type="tel" name="telephone" required>
+
+            <label for="type">User Type:</label>
+            <select name="type" id="userType" >
+                <option value="company">Company</option>
+                <option value="passenger">Passenger</option>
+            </select>
+
+            <div id="additionalInfo"></div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/Registeration.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+    <script src="js/bootstrap.bundle.min.js"></script>      
+</body>

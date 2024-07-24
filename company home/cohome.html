@@ -1,0 +1,86 @@
+<html>
+<head>
+<link rel="stylesheet" href="Css/cohome.css">        
+<link rel="stylesheet" href="Css/all.min.css">
+<link rel="icon" href="download.png">
+<title>Company Home</title>
+<body>
+        
+    <!-- <div class="logo"> -->
+        <!-- <img src="<?php echo $companyData["logoimg"]; ?>" alt="" width="100px"> -->
+        <!-- <img src="download (1).png" alt=""> -->
+     <!-- <div class="company-info"> -->
+        <!-- <h1><?php echo $companyData["name"]; ?></h1> -->
+    <!-- </div> -->
+
+
+
+<div class="content">            
+<div class="coloring">
+    <nav class="navbar">
+        <div class="logo">
+            <p>Company Home  <i class="fa-solid fa-plane"></i></p>
+            
+        </div>
+        <div class="links">
+            <div class="linking">
+                <ul>
+                    <li><a href=""home.php"">Home</a></li>
+                    <li><a href="AddFlight.php">Add flight</a></li>
+                    <li><a href="CompanyProfile.php">Profile</a></li>
+                    <li><a href="#">Messages</a></li>
+                 
+                </ul>
+            </div>
+            </div>
+    </nav>
+    <div id="flights">
+        <h2>Flight Details</h2>
+        <br>
+        <br>
+        <ul class="flight-list">
+            <div class="buttoning">
+            <li>Flight1</li>
+            <button type="submit">Details</button>
+            </div>
+            <br>
+            <br>
+            <div class="buttonof">
+            <li>Flight2</li>
+            <button type="submit">Details</button>
+            </div>
+            <!-- <?php  
+            if($flightList != null){
+                for($i = 0; $i < count($flightList); $i++){
+                    echo $flightList[$i]["Flight Name: "]; 
+    
+                    echo '<form action="listFlightAPI.php" method="post">';
+                    echo '<input type="hidden" name="index" value="' . $i . '">';
+                    echo '<button type="submit">Details</button>';
+                    echo '</form>';
+                
+                    echo "<br>";
+                    echo "<br>";
+                }
+                // foreach($flightList as $flightdata){
+                //         foreach($flightdata as $key => $value){
+                //             echo $key;
+                //         }
+                //         echo "<br>";
+                //     }
+                 }
+            else
+                echo "No Flights"; ?> -->
+            <!-- List of flights goes here -->
+            <!-- Add more flights as needed -->
+                </ul>
+    </div>
+    
+</div>
+
+</div>
+
+    <script src="js/cohome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+    <script src="js/bootstrap.bundle.min.js"></script>      
+</body>
